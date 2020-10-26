@@ -18,4 +18,4 @@ def is_online(playerId):
             else:
                 return False
     except:
-        print("Invalid Player")⏎    
+        print("Invalid Player")
