@@ -1,6 +1,7 @@
 # roblox-notifier
-Simple Python app that sends an SMS notification when a Roblox user comes online
-This could be useful if you are waiting for a friend to come online or trying to catch a streamer online
+Simple Python app that sends an SMS notification when a Roblox user comes online.
+
+This could be useful if you are waiting for a friend to come online or trying to catch a streamer online.
 
 # Run
 python3 `app/notifier.py`
