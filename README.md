@@ -12,5 +12,5 @@ In order for this code to work you need a `.env` file in the `app` dir of this p
 twilio_sid="" # twilio account
 twilio_token="" # twilio API token
 twilio_fnum="" # twilio phone number
-twilio_tnum="" # person to send the SMS notification to
+twilio_tnum="" # phone number of person to send the SMS notification to
 ```
