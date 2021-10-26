@@ -1,14 +1,17 @@
 from is_online import is_online
 from send_sms import send_sms
+from time import sleep
 
 # Players to get notified on
-playerids = [""]
+playerIds = [""]
+lastStatus = {}
 
 while True:
-    for playerid in playerids:
-        if is_online(playerid):
-                print(f"Player {playerid} is online")
-                send_sms(playerid)
-                playerids.remove(playerid)
-        else:
-            pass
+    for playerId in playerIds:
+        isOnline = is_online(playerId)
+        if isOnline != lastStatus.get(playerId, False):
+            status = "online" if isOnline else "offline"
+            print(f"Player {playerId} is {status}")
+            send_sms(playerId, status)
+        lastStatus[playerId] = isOnline
+    sleep(5)
